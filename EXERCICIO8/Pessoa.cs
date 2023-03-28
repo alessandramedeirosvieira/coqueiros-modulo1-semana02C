@@ -9,19 +9,20 @@ namespace EXERCICIO8
     {
         public string Nome {get; set; }
         public DateTime DataNascimento {get; set; }
-        
-        public void MostrarIdade()
-        {
+
+        //como o retorno é mostrar o texto no console, ele não retorna nada, por isso será void
+        public void MostrarIdade(){
             int idade = CalcularIdade();
-            Console.WriteLine($"{Nome} tem {idade} anos de idade");
+            Console.WriteLine($"Nome {Nome} tem a Idade {idade}");
         }
+        //esse metodo vai retornor inteiro idade
+        //conforme exercicio eliminado a var local dataNascimento e substituído a mesma pela prop DataNascimento
         private int CalcularIdade(){
-            var dataNascimento = new DateTime(1984, 1, 2);
             var dataAtual = DateTime.Now;
-            var idade = dataAtual.Year - dataNascimento.Year;
-            if (dataNascimento > dataAtual.AddYears(-idade))
+            var idade = dataAtual.Year - DataNascimento.Year;
+            if (DataNascimento > dataAtual.AddYears(-idade))
             {
-            idade--;    
+            idade--;
             }
             return idade;
         }
