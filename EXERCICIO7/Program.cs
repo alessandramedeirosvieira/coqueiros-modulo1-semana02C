@@ -1,14 +1,6 @@
 ﻿using EXERCICIO7;
 
+//classe estatica não tem como instanciar. Vc executa da forma abaixo (chama a classe com o ponto e depois o metodo)
 Animacao.ExibirAnimacao();
-Animacao.ExibirAnimacao("Pinoquio");
+Animacao.ExibirAnimacao("Pinóquio");
 Animacao.ExibirAnimacao("Peter Pan");
-
-
-
-
-
-
-
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");

@@ -7,22 +7,22 @@ namespace EXERCICIO5
 {
     public class Cobrar
     {
-         private decimal _valor;
+         private decimal valor;
                 
-        private decimal _multa;
-
+        private decimal multa;
+//construtor
         public Cobrar(decimal valor, decimal multa)
         {
-            this._valor = valor;
-            this._multa = multa;   
+            this.valor = valor;
+            this.multa = multa;
         }
 
         public void Calcular(){
-            Console.WriteLine($"Valor cobrado = {_valor}, multa = {_multa}, total = {CalcularMulta()}");
+            Console.WriteLine($"Valor cobrado = {valor}, multa = {multa}, somaValor = {CalcularMulta()}");
         }
         
         private decimal CalcularMulta(){
-            return _multa + _valor;
+            return multa + valor;
         }
     }
 }

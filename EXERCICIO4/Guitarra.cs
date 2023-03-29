@@ -7,13 +7,13 @@ namespace EXERCICIO4
 {
     public class Guitarra
     {
-         // Variável
+         // Variável do tipo estatica
         private static string afinacao;
        
        // Construtor com os parâmetros
         public Guitarra()
         {
-            afinacao = "G/Sol";
+            afinacao = "Sol";
         }
 
         public void Tocar(){

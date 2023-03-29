@@ -10,8 +10,7 @@ namespace EXERCICIO3
         public int Telefone {get; set;}
         public string Mensagem {get; set;}
 
-        public void Executar()
-        {
+        public void Executar(){
             EnviarMensagemAoTelefone();
             Console.WriteLine("Metodo executado pelo console");
         }

@@ -5,15 +5,13 @@ using System.Threading.Tasks;
 
 namespace EXERCICIO7
 {
-    public class Animacao
+    public static class Animacao
     {
-        public static void ExibirAnimacao()
-        {
+        public static void ExibirAnimacao(){
             Console.WriteLine("Animação Frozen");
         }
 
-        public static void ExibirAnimacao(string animacao)
-        {
+        public static void ExibirAnimacao(string animacao){
             Console.WriteLine($"Animação {animacao}");
         }
     }

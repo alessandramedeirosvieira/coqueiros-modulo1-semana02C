@@ -10,7 +10,7 @@ namespace EXERCICIO6
         public string NomeFilme {get; set;}
         public string Categoria {get; set;}
        
-       
+       //construtor
         public Filme(string nomeFilme, string categoria)
         {
             NomeFilme = nomeFilme;
