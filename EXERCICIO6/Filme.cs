@@ -7,17 +7,24 @@ namespace EXERCICIO6
 {
     public class Filme
     {
+//propriedades
         public string NomeFilme {get; set;}
         public string Categoria {get; set;}
+
+        public Filme () {
+            
+        }
        
-       //construtor
+       //construtor (se não for feito ele assume o padrão, ou seja vazio, sem parametros)
+       //o construtor sempre é publico
+       //primeiro propriedade
         public Filme(string nomeFilme, string categoria)
         {
             NomeFilme = nomeFilme;
             Categoria = categoria;
         }
         public void Exibir(){
-            Console.WriteLine($"Filme: {NomeFilme}, categoria: {Categoria}");
+            Console.WriteLine($"Filme {NomeFilme}, categoria {Categoria}");
         }
     }
 }

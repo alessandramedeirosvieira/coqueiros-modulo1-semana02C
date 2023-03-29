@@ -1,11 +1,18 @@
 ﻿using EXERCICIO6;
 
+//instanciando e passando os dados dentro dos parenteses
 var filme = new Filme("Missão Impossível", "aventura");
+
+//chamando metodo
 filme.Exibir();
 
-var filme2 = new Filme("Gladiador", "drama");
-filme2.Exibir();
+//se o construtor fosse default (vazio) a instancia seria da forma abaixo
+var filme2 = new Filme();
+// preencher individualmente
+//.propriedade
+filme2.NomeFilme = "Tubarão";
+filme2.Categoria = "suspense";
 
-var filme3 = new Filme ("Tubarão", "suspense");
-filme3.Exibir();
+//chamar metodo
+filme2.Exibir();
 
